@@ -39,9 +39,7 @@ class Circle(Shapes):
             self.name,
             self.radius,
         )
-
-
-
+        
 shape_1 = Circle("This is Circle", 25)
 print(shape_1)
 print(shape_1.get_area())
