@@ -7,9 +7,12 @@ class Shapes:
         self.name = name
 
 
-    # def __str__(self):
-    #     return "Name: " + self.name
-    
+    def __str__(self):
+        return "Name: " + self.name
+
+
+shape_0 = Shapes("This is Shapes Class")
+print(shape_0) 
 print( 50 * "=" )    
 
 
@@ -32,7 +35,7 @@ class Circle(Shapes):
 
 
     def __str__(self):
-        return 'Name: {}; \n Radius: {};'.format(
+        return 'Name: {} \n Radius: {}.'.format(
             self.name,
             self.radius,
         )
@@ -65,7 +68,7 @@ class Rectangle(Shapes):
 
 
     def __str__(self):
-        return 'Name: {}; \n A: {}; \n B: {};'.format(
+        return 'Name: {} \n A: {}; \n B: {}.'.format(
             self.name,
             self.a,
             self.b,
@@ -100,7 +103,7 @@ class Triangle(Shapes):
 
 
     def __str__(self):
-        return 'Name: {}; \n A: {}; \n B: {}; \n C: {};'.format(
+        return 'Name: {} \n A: {}; \n B: {}; \n C: {}.'.format(
             self.name,
             self.a,
             self.b,
